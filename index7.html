@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/004/847/742/small_2x/a-lakeside-walkway-with-beautiful-mountain-scenery-in-the-background-in-anime-style-vector.jpg'); /* Fondo de pantalla */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgba(240, 240, 240, 0.8); /* Fondo con opacidad */
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+
+        header {
+            background-color: rgba(14, 129, 233, 0.616); /* Encabezado con opacidad */
+            color: #fff;
+            padding: 2%;
+            text-align: center;
+            transition: background-color 0.3s ease; /* Transición de color */
+            width: 1400px;
+            height: 100%;
+        }
+        
+        header:hover {
+            background-color: rgba(16, 18, 163, 0.5); /* Cambio de color al pasar el cursor */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 2%;
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        nav ul li:hover {
+            transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700; /* Cambio de color al pasar el cursor */
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        aside{
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 5px; /* Bordes redondeados */
+            padding: 10px; /* Relleno interno */
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+            margin-top: 20px; /* Margen superior */
+            width: 30%;
+            height: 100%;
+        }
+        
+        main {
+            padding: 2%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #video-container {
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            margin-bottom: 3%;
+            background-color: rgba(255, 255, 255, 0.8); /* Sección con opacidad */
+            border-radius: 10px;
+            padding: 2%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        section:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 1%;
+            margin-bottom: 2%;
+        }
+        
+        section p {
+            color: black;
+        }
+        
+        footer {
+            background-color: rgba(14, 129, 223, 0.616); /* Pie de página con opacidad */
+            color: #fff;
+            text-align: center;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Estilos para los iconos de contacto */
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a mi página!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <!-- Contenido principal de la página -->
+            <section id="video-container">
+                <h2>Capitulo 6</h2>
+                <p>Disfruta el capitulo</p>
+                <div id="video-player">
+                    <!-- Aquí se reproducirá el video -->
+                    <iframe width="100%" height="620" frameborder="0" src="https://mega.nz/embed/sKdS2RZK#r7K1oQo2foIzPB2KSGwTQVVKpcLiY2dkN0JL9QoCeyw" allowfullscreen ></iframe>
+                </div>
+                <br>
+                <div>
+                    <a href="index6.html" class="button">Anterior</a>
+                    <a href="index8.html" class="button">Siguiente</a>
+                </div>
+            </section>
+        </main>
+    </div> <!-- Cierre del div .container -->
+    <footer>
+        <p>Es una página sin fines de lucro</p>
+    </footer>
+</body>
+
+</html>
